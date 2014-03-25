@@ -5578,10 +5578,10 @@ button.close {
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
   .carousel-control .icon-next {
-    width: 30px;
+ /*   width: 30px;
     height: 30px;
     margin-top: -15px;
-   margin-left: 15px;
+   margin-left: -15px;
     font-size: 30px;
   }/*
   .carousel-caption {
