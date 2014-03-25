@@ -5518,8 +5518,8 @@ button.close {
 .carousel-control .icon-next {
   width: 20px;
   height: 20px;
-  margin-top: 12px;
-  margin-left: 12px;
+  margin-top: -12px;
+  margin-left: -12px;
   font-family: serif;
 
 }
