@@ -4820,7 +4820,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
-.panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.panel > .table:first-child > tbody:4561`first-child > tr:first-child td:first-child,
 .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 .panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
@@ -5580,12 +5580,13 @@ button.close {
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
   .carousel-control .icon-next {
- /*   width: 30px;
+    width: 30px;
     height: 30px;
-    margin-top: -15px;
-   margin-left: -15px;
+    margin-top: -18px;
+   margin-left: -12px;
+   margin-right: 12px;
     font-size: 30px;
-  }/*
+  }
   .carousel-caption {
     right: 20%;
     left: 20%;
@@ -5593,7 +5594,7 @@ button.close {
   }
   .carousel-indicators {
     bottom: 20px;
-  }*/
+  }
 }
 .clearfix:before,
 .clearfix:after,
