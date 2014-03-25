@@ -4820,7 +4820,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
-.panel > .table:first-child > tbody:4561`first-child > tr:first-child td:first-child,
+.panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 .panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
@@ -5411,7 +5411,6 @@ button.close {
   border-right-width: 0;
   border-left-color: #fff;
 }
-
 .carousel {
   position: relative;
 }
@@ -5469,7 +5468,6 @@ button.close {
   font-size: 20px;
   color: #fff;
   text-align: center;
-  padding:25px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
   filter: alpha(opacity=50);
   opacity: .5;
@@ -5481,13 +5479,12 @@ button.close {
   background-repeat: repeat-x;
 }
 .carousel-control.right {
-  right: 10px;
+  right: 0;
   left: auto;
   background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, .0001) 0%), color-stop(rgba(0, 0, 0, .5) 100%));
   background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
   background-repeat: repeat-x;
-
 }
 .carousel-control:hover,
 .carousel-control:focus {
@@ -5521,9 +5518,7 @@ button.close {
   margin-top: -10px;
   margin-left: -10px;
   font-family: serif;
-
 }
-
 .carousel-control .icon-prev:before {
   content: '\2039';
 }
@@ -5532,7 +5527,7 @@ button.close {
 }
 .carousel-indicators {
   position: absolute;
-  bottom: 10px !important;
+  bottom: 10px;
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -5582,7 +5577,7 @@ button.close {
     width: 30px;
     height: 30px;
     margin-top: -15px;
-   margin-left: -15px;
+    margin-left: -15px;
     font-size: 30px;
   }
   .carousel-caption {
