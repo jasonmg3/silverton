@@ -5518,7 +5518,7 @@ button.close {
   width: 20px;
   height: 20px;
   margin-top: -10px;
-  margin-left: 10px;
+  margin-left: -10px;
   font-family: serif;
 
 }
@@ -5581,7 +5581,7 @@ button.close {
     width: 30px;
     height: 30px;
     margin-top: -15px;
-   margin-left: -15px;
+   margin-left: 15px;
     font-size: 30px;
   }/*
   .carousel-caption {
