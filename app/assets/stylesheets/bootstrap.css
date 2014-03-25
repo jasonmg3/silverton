@@ -5461,19 +5461,19 @@ button.close {
   left: 100%;
 }
 .carousel-control {
-  position: absolute;
-  /*top: 0;
+ /* position: absolute;
+  top: 0;
   bottom: 0;
   left: 0;
   width: 15%;
-  font-size: 20px;*/
+  font-size: 20px;
   color: #fff;
   text-align: center;
   padding:25px;
- /* text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
   filter: alpha(opacity=50);
   opacity: .5;*/
-}/*
+}
 .carousel-control.left {
   background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, .5) 0%), color-stop(rgba(0, 0, 0, .0001) 100%));
   background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
@@ -5488,7 +5488,7 @@ button.close {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
   background-repeat: repeat-x;
 
-}*/
+}
 .carousel-control:hover,
 .carousel-control:focus {
   color: #fff;
@@ -5530,7 +5530,7 @@ button.close {
 }
 .carousel-control .icon-next:before {
   content: '\203a';
-}/*
+}
 .carousel-indicators {
   position: absolute;
   bottom: 10px !important;
@@ -5574,7 +5574,7 @@ button.close {
 }
 .carousel-caption .btn {
   text-shadow: none;
-}*/
+}
 @media screen and (min-width: 768px) {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
