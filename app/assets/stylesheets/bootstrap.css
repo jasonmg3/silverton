@@ -5411,6 +5411,7 @@ button.close {
   border-right-width: 0;
   border-left-color: #fff;
 }
+
 .carousel {
   position: relative;
 }
@@ -5458,7 +5459,7 @@ button.close {
 }
 .carousel-inner > .active.right {
   left: 100%;
-}
+}/*
 .carousel-control {
   position: absolute;
   top: 0;
@@ -5524,7 +5525,7 @@ button.close {
 }
 .carousel-control .icon-next:before {
   content: '\203a';
-}
+}*/
 .carousel-indicators {
   position: absolute;
   bottom: 10px;
