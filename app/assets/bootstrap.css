@@ -5486,7 +5486,7 @@ button.close {
   background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
   background-repeat: repeat-x;
-}*/
+}
 .carousel-control:hover,
 .carousel-control:focus {
   color: #fff;
@@ -5525,7 +5525,7 @@ button.close {
 }
 .carousel-control .icon-next:before {
   content: '\203a';
-}
+}*/
 .carousel-indicators {
   position: absolute;
   bottom: 10px;
