@@ -5521,6 +5521,9 @@ button.close {
   font-family: serif;
 
 }
+.carousel-control .icon-next {
+  margin-left: -30 !important;
+  }
 .carousel-control .icon-prev:before {
   content: '\2039';
 }
