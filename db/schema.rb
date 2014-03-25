@@ -9,8 +9,26 @@
 # from scratch. The latter is a flawed and unsustainable approach (the more migrations
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
-# It's strongly recommended to check this file into your version control system.
+# It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(version: 20140324200351) do
+
+  create_table "portfolios", force: true do |t|
+    t.string   "title"
+    t.string   "description"
+    t.string   "image"
+    t.string   "image2"
+    t.string   "image3"
+    t.string   "image4"
+    t.string   "image5"
+    t.string   "image6"
+    t.string   "image8"
+    t.string   "image9"
+    t.string   "image10"
+    t.string   "image11"
+    t.string   "image12"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

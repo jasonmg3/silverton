@@ -1,2 +1,334 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+    <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill"> 
+                	<div id="frontimage">
+						<p><%= image_tag("2013-Southern-Living-Showcase-Home1.jpg") %></p>
+					</div>
+                </div>
+                <div class="carousel-caption">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill">
+                	<div id="frontimage">
+						<p><%= image_tag("Best-Interior-Design.jpg") %></p>
+					</div>
+                </div>
+                <div class="carousel-caption">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" >
+                	<div id="frontimage">
+						<p><%= image_tag("Best-Custom-Spec-Home.jpg") %></p>
+					</div>
+                </div>
+                <div class="carousel-caption">
+                    <h1></h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </div>
+    <br />
+    <!--
+<div id="frontimage">
+<p><%= image_tag("2013-Southern-Living-Showcase-Home1.jpg") %></p>
+</div>
+
+-->
+    <div class="container">
+        <div class="row">
+        	<div id="southern_living">
+        	<center><br /><h4 id="footer_text" class="col-md-8 text-center">We’re an Austin home builder that builds and remodels homes in Westlake, Lakeway, Marble Falls, and Lago Vista/Jonestown.
+We are the 2013 Southern Living Custom Builder of the Year, and we've been awarded Best Custom Home by the Home Builders Association of Greater Austin for 2011 and 2012.<br /></h4>
+<div id="assoc" class="col-md-4"><p><%= image_tag("SL-New.png") %></p><br /><br /></div>
+</div>
+<hr />
+<br />
+<div id="featured">
+<center><h1 class="col-md-12">Featured Custom Homes<br /><br /></h1></center>
+<br /><br />
+<center>
+	<div id="featured" class= "col-md-3">
+		<%= image_tag("Slverton-Southern-Living-Showcase-Home-17-214x119.jpg") %>
+		<h3>2013 Southern Living Showcase Home</h3>
+	</div>
+		<div id="featured" class= "col-md-3">
+		<%= image_tag("Canyon-Oaks-Lake-Home-01-214x119.jpg") %>
+		<h3>Waterfront Home in Lago Vista</h3>
+	</div>
+	<div id="featured" class= "col-md-3">
+		<%= image_tag("Front2-1-214x119.jpg") %>
+		<h3>The Hollows Custom Home</h3>
+	</div>
+	<div id="featured" class= "col-md-3">
+		<%= image_tag("1Front21-214x119.jpg") %>
+		<h3>Spanish Oaks Custom</h3>
+	<div/>
+
+</center>
+<br />
+</div>
+<center><h1 id="others" class="col-md-12">What Others Are Saying About Us<br /><br /></h1></center>
+<br />
+
+<div class="services">
+<div class="col-md-4 text-center">
+            <div class="service-item"><a href="#search">
+              <i class="service-icon fa fa-home"></i>
+              <h3>View Portfolio</h3>
+
+                <p>This portfolio is in tune with the design trends of the Texas hill country & greater Austin area. Find the custom home that is laid out the way you envision it to fit your lifestyle. 
+</p></a>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="service-item"><a href="#search">
+              <i class="service-icon fa fa-home"></i>
+              <h3>View Portfolio</h3>
+
+                <p>This portfolio is in tune with the design trends of the Texas hill country & greater Austin area. Find the custom home that is laid out the way you envision it to fit your lifestyle. 
+</p></a>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="service-item"><a href="#search">
+              <i class="service-icon fa fa-home"></i>
+              <h3>View Portfolio</h3>
+
+                <p>This portfolio is in tune with the design trends of the Texas hill country & greater Austin area. Find the custom home that is laid out the way you envision it to fit your lifestyle. 
+</p></a>
+            </div>
+          </div>
+      </div>
+
+</div>
+</div>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script>
+	+function ($) {
+  'use strict';
+
+  // CAROUSEL CLASS DEFINITION
+  // =========================
+
+  var Carousel = function (element, options) {
+    this.$element    = $(element)
+    this.$indicators = this.$element.find('.carousel-indicators')
+    this.options     = options
+    this.paused      =
+    this.sliding     =
+    this.interval    =
+    this.$active     =
+    this.$items      = null
+
+    this.options.pause == 'hover' && this.$element
+      .on('mouseenter', $.proxy(this.pause, this))
+      .on('mouseleave', $.proxy(this.cycle, this))
+  }
+
+  Carousel.DEFAULTS = {
+    interval: 5000,
+    pause: 'hover',
+    wrap: true
+  }
+
+  Carousel.prototype.cycle =  function (e) {
+    e || (this.paused = false)
+
+    this.interval && clearInterval(this.interval)
+
+    this.options.interval
+      && !this.paused
+      && (this.interval = setInterval($.proxy(this.next, this), this.options.interval))
+
+    return this
+  }
+
+  Carousel.prototype.getActiveIndex = function () {
+    this.$active = this.$element.find('.item.active')
+    this.$items  = this.$active.parent().children()
+
+    return this.$items.index(this.$active)
+  }
+
+  Carousel.prototype.to = function (pos) {
+    var that        = this
+    var activeIndex = this.getActiveIndex()
+
+    if (pos > (this.$items.length - 1) || pos < 0) return
+
+    if (this.sliding)       return this.$element.one('slid.bs.carousel', function () { that.to(pos) })
+    if (activeIndex == pos) return this.pause().cycle()
+
+    return this.slide(pos > activeIndex ? 'next' : 'prev', $(this.$items[pos]))
+  }
+
+  Carousel.prototype.pause = function (e) {
+    e || (this.paused = true)
+
+    if (this.$element.find('.next, .prev').length && $.support.transition) {
+      this.$element.trigger($.support.transition.end)
+      this.cycle(true)
+    }
+
+    this.interval = clearInterval(this.interval)
+
+    return this
+  }
+
+  Carousel.prototype.next = function () {
+    if (this.sliding) return
+    return this.slide('next')
+  }
+
+  Carousel.prototype.prev = function () {
+    if (this.sliding) return
+    return this.slide('prev')
+  }
+
+  Carousel.prototype.slide = function (type, next) {
+    var $active   = this.$element.find('.item.active')
+    var $next     = next || $active[type]()
+    var isCycling = this.interval
+    var direction = type == 'next' ? 'left' : 'right'
+    var fallback  = type == 'next' ? 'first' : 'last'
+    var that      = this
+
+    if (!$next.length) {
+      if (!this.options.wrap) return
+      $next = this.$element.find('.item')[fallback]()
+    }
+
+    if ($next.hasClass('active')) return this.sliding = false
+
+    var e = $.Event('slide.bs.carousel', { relatedTarget: $next[0], direction: direction })
+    this.$element.trigger(e)
+    if (e.isDefaultPrevented()) return
+
+    this.sliding = true
+
+    isCycling && this.pause()
+
+    if (this.$indicators.length) {
+      this.$indicators.find('.active').removeClass('active')
+      this.$element.one('slid.bs.carousel', function () {
+        var $nextIndicator = $(that.$indicators.children()[that.getActiveIndex()])
+        $nextIndicator && $nextIndicator.addClass('active')
+      })
+    }
+
+    if ($.support.transition && this.$element.hasClass('slide')) {
+      $next.addClass(type)
+      $next[0].offsetWidth // force reflow
+      $active.addClass(direction)
+      $next.addClass(direction)
+      $active
+        .one($.support.transition.end, function () {
+          $next.removeClass([type, direction].join(' ')).addClass('active')
+          $active.removeClass(['active', direction].join(' '))
+          that.sliding = false
+          setTimeout(function () { that.$element.trigger('slid.bs.carousel') }, 0)
+        })
+        .emulateTransitionEnd($active.css('transition-duration').slice(0, -1) * 1000)
+    } else {
+      $active.removeClass('active')
+      $next.addClass('active')
+      this.sliding = false
+      this.$element.trigger('slid.bs.carousel')
+    }
+
+    isCycling && this.cycle()
+
+    return this
+  }
+
+
+  // CAROUSEL PLUGIN DEFINITION
+  // ==========================
+
+  var old = $.fn.carousel
+
+  $.fn.carousel = function (option) {
+    return this.each(function () {
+      var $this   = $(this)
+      var data    = $this.data('bs.carousel')
+      var options = $.extend({}, Carousel.DEFAULTS, $this.data(), typeof option == 'object' && option)
+      var action  = typeof option == 'string' ? option : options.slide
+
+      if (!data) $this.data('bs.carousel', (data = new Carousel(this, options)))
+      if (typeof option == 'number') data.to(option)
+      else if (action) data[action]()
+      else if (options.interval) data.pause().cycle()
+    })
+  }
+
+  $.fn.carousel.Constructor = Carousel
+
+
+  // CAROUSEL NO CONFLICT
+  // ====================
+
+  $.fn.carousel.noConflict = function () {
+    $.fn.carousel = old
+    return this
+  }
+
+
+  // CAROUSEL DATA-API
+  // =================
+
+  $(document).on('click.bs.carousel.data-api', '[data-slide], [data-slide-to]', function (e) {
+    var $this   = $(this), href
+    var $target = $($this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) //strip for ie7
+    var options = $.extend({}, $target.data(), $this.data())
+    var slideIndex = $this.attr('data-slide-to')
+    if (slideIndex) options.interval = false
+
+    $target.carousel(options)
+
+    if (slideIndex = $this.attr('data-slide-to')) {
+      $target.data('bs.carousel').to(slideIndex)
+    }
+
+    e.preventDefault()
+  })
+
+  $(window).on('load', function () {
+    $('[data-ride="carousel"]').each(function () {
+      var $carousel = $(this)
+      $carousel.carousel($carousel.data())
+    })
+  })
+
+}(jQuery);
+
+</script>
+
+<script type="text/javascript">
+  var $ = jQuery.noConflict();
+  $(document).ready(function() { 
+      $('#myCarousel').carousel({ interval: 6000, cycle: true });
+  }); 
+</script>

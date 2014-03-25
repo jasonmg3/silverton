@@ -1,4 +1,6 @@
 Silverton::Application.routes.draw do
+  resources :portfolios
+
   get "pages/home"
 
   get "pages/about"
