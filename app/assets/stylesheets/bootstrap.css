@@ -5486,6 +5486,7 @@ button.close {
   background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
   background-repeat: repeat-x;
+  margin-left: -30px !important;
 }
 .carousel-control:hover,
 .carousel-control:focus {
@@ -5521,9 +5522,7 @@ button.close {
   font-family: serif;
 
 }
-.carousel-control .icon-next {
-  margin-left: -30 !important;
-  }
+
 .carousel-control .icon-prev:before {
   content: '\2039';
 }
