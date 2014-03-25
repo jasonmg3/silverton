@@ -5580,13 +5580,12 @@ button.close {
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
   .carousel-control .icon-next {
-    width: 30px;
+ /*   width: 30px;
     height: 30px;
-    margin-top: -18px;
-   margin-left: -12px;
-   margin-right: 12px;
+    margin-top: -15px;
+   margin-left: -15px;
     font-size: 30px;
-  }
+  }/*
   .carousel-caption {
     right: 20%;
     left: 20%;
@@ -5594,7 +5593,7 @@ button.close {
   }
   .carousel-indicators {
     bottom: 20px;
-  }
+  }*/
 }
 .clearfix:before,
 .clearfix:after,
