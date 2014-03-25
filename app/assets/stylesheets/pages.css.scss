@@ -36,6 +36,7 @@ body {
 	margin:15px;
 	box-shadow: 5px 5px 5px 0px #888;
 	border-radius: 5px;
+	margin-top: 30px;
 }
 
 .carousel {
@@ -66,7 +67,12 @@ red {
 /* Services */
 
 .services {
-margin-bottom: 35px;
+
+background: url("old_moon.png") fixed;
+display:inline-block;
+margin-top:30px;
+border-top:solid 3px #888;
+margin-bottom: -5px;
 
 }
 .services a {
@@ -100,6 +106,7 @@ i.service-icon {
   line-height: 136px;
   vertical-align: middle; 
   text-align: center;
+  margin-top:30px;
 }
 
 #others {
@@ -110,8 +117,33 @@ i.service-icon {
 #southern_living {
 	display: block;
 	margin-bottom: 48px;
+	padding:30px;
 
 }
-#featured {
+#featured_sec {
+background: url("light_grey.png") fixed;
+display:inline-block;
+margin-bottom:30px;
+margin-top:30px;
+border-top:solid 3px #888;
+border-bottom:solid 3px #888;
+
+}
+#kudos {
+	margin-bottom: 30px;
+	display:inilne-block;
+}
+
+#kudos img {
+	width: 450px;
+	border-radius: 50%;
+	box-shadow: 8px 8px 8px 0px #888;
+}
+#kudos p {
+	margin-top: 20px;
+	text-align:vertical;
+	margin-bottom:20px;
+	font-size: 135%;
+	line-height: 30px;
 }
 
