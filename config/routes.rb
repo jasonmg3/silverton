@@ -11,7 +11,11 @@ Silverton::Application.routes.draw do
 
   get '/portfolio_main' => 'pages#main_portfolio'
 
-  
+  get '/conact' => 'pages#contact'
+
+  get '/about' => 'pages#about'
+
+
 
   root :to => 'pages#home'
 
