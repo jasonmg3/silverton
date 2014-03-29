@@ -11,7 +11,7 @@ Silverton::Application.routes.draw do
 
   get '/portfolio_main' => 'pages#main_portfolio'
 
-  get '/conact' => 'pages#contact'
+  get '/contact' => 'pages#contact'
 
   get '/about' => 'pages#about'
 
