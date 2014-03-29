@@ -7,6 +7,12 @@ Silverton::Application.routes.draw do
 
   get "pages/contact"
 
+  get "pages/main_portfolio"
+
+  get '/portfolio_main' => 'pages#main_portfolio'
+
+  
+
   root :to => 'pages#home'
 
   # The priority is based upon order of creation:
