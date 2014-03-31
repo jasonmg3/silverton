@@ -1,65 +1,251 @@
+<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+<script>
+
+$(document).ready(function() {
+
+
+  $('#image').click(function(e){
+    e.preventDefault();
+    $('#portfolio_main').html($('#image').html());
+    $('#portfolio_main').show('slide', {
+      direction: "left"
+
+    }, 2000);
+});
+
+$('#image2').click(function(e){
+  e.preventDefault();
+    $('#portfolio_main').html($('#image2').html());
+    $('#portfolio_main').show('slide', {
+      direction: "left"
+
+    }, 2000);
+
+
+});
+
+$('#image3').click(function(e){
+  e.preventDefault();
+    $('#portfolio_main').html($('#image3').html());
+    $('#portfolio_main').show('slide', {
+      direction: "left"
+
+    }, 2000);
+
+
+});
+$('#image4').click(function(e){
+  e.preventDefault();
+    $('#portfolio_main').html($('#image4').html());
+    $('#portfolio_main').show('slide', {
+      direction: "left"
+
+    }, 2000);
+
+
+});
+
+$('#image5').click(function(e){
+  e.preventDefault();
+    $('#portfolio_main').html($('#image5').html());
+    $('#portfolio_main').show('slide', {
+      direction: "left"
+
+    }, 2000);
+
+
+});
+$('#image6').click(function(e){
+  e.preventDefault();
+    $('#portfolio_main').html($('#image6').html());
+    $('#portfolio_main').show('slide', {
+      direction: "left"
+
+    }, 2000);
+
+
+});
+$('#image7').click(function(e){
+  e.preventDefault();
+    $('#portfolio_main').html($('#image7').html());
+    $('#portfolio_main').show('slide', {
+      direction: "left"
+
+    }, 2000);
+
+
+});
+$('#image8').click(function(e){
+  e.preventDefault();
+    $('#portfolio_main').html($('#image8').html());
+    $('#portfolio_main').show('slide', {
+      direction: "left"
+
+    }, 2000);
+
+
+});
+$('#image9').click(function(e){
+  e.preventDefault();
+    $('#portfolio_main').html($('#image9').html());
+    $('#portfolio_main').show('slide', {
+      direction: "left"
+
+    }, 2000);
+
+
+});
+$('#image10').click(function(e){
+  e.preventDefault();
+    $('#portfolio_main').html($('#image10').html());
+    $('#portfolio_main').show('slide', {
+      direction: "left"
+
+    }, 2000);
+
+
+});
+$('#image11').click(function(e){
+  e.preventDefault();
+    $('#portfolio_main').html($('#image11').html());
+    $('#portfolio_main').show('slide', {
+      direction: "left"
+
+    }, 2000);
+
+
+});
+$('#image12').click(function(e){
+  e.preventDefault();
+    $('#portfolio_main').html($('#image12').html());
+    $('#portfolio_main').show('slide', {
+      direction: "left"
+
+    }, 2000);
+
+
+});
+$('#image11').click(function(e){
+  e.preventDefault();
+    $('#portfolio_main').html($('#image11').html());
+    $('#portfolio_main').show('slide', {
+      direction: "left"
+
+    }, 2000);
+
+
+});
+  });
+
+</script>
+
+<script>
+$(document).ready(function() {
+$( "#up" ).click(function() {
+  $( "#firstgroup" ).toggle( "slow") 
+  $("#secondgroup").toggle("slow")
+
+  });
+$( ".down" ).click(function() {
+  $( "#firstgroup" ).toggle( "slow") 
+  $("#secondgroup").toggle("slow")
+
+  });
+$( "#down2" ).click(function() {
+  $( "#secondgroup" ).toggle( "slow") 
+  $("#thirdgroup").toggle("slow")
+
+  });
+$( "#up2" ).click(function() {
+  $( "#secondgroup" ).toggle( "slow") 
+  $("#thirdgroup").toggle("slow")
+
+  });
+});
+</script>
+
+
 <p id="notice"><%= notice %></p>
  <div class="container">
         <div class="row">
+          <div id="portfolio_show" class="col-md-8 col-md-offset-2 text-center">
 <p>
-  <strong>Title:</strong>
+  <center>
+  <strong>
   <%= @portfolio.title %>
+</strong> 
+</center>
 </p>
 
 <p>
   <strong>Description:</strong>
   <%= @portfolio.description %>
 </p>
+<div id="portfolio_main">
+    <p>
 
+      <%= image_tag(@portfolio.image.url) %>
+    </p>
+</div>
+</div>
+<div id='portfolio_thumb' class="col-md-8 col-md-offset-2 text-center">
 <p>
-  <strong>Image:</strong>
-  <%= @portfolio.image %>
-</p>
+  <div id="firstgroup">
+    <icon class="up-max-icon fa fa-chevron-left">
+  <pic id="image">
+    </icon><%= image_tag(@portfolio.image.url) %>
+  </pic>
 
-<p>
-  <strong>Image2:</strong>
-  <%= @portfolio.image2 %>
-</p>
+  <pic id="image2">
+      <%= image_tag(@portfolio.image2.url) %>
+  </pic>
 
-<p>
-  <strong>Image3:</strong>
-  <%= @portfolio.image3 %>
-</p>
+  <pic id="image3">
+    <%= image_tag(@portfolio.image3.url) %> 
+  </pic>
+<icon class="down fa fa-chevron-right"></icon>
+</div>
+<div id="secondgroup">
+    <icon class="up fa fa-chevron-left">
+  <pic id="image4">
+    <%= image_tag(@portfolio.image4.url) %>
+  </pic>
+  <pic id="image5">
+  <%= image_tag(@portfolio.image5.url) %>
+</pic>
+  <pic id="image6">
+  <%= image_tag(@portfolio.image6.url) %>
+</pic>
+<icon class="down2 fa fa-chevron-right"></icon>
+</div>
+<div id="thirdgroup">
+    <icon class="up2 fa fa-chevron-left">
+<pic id="image7">
+  <%= image_tag(@portfolio.image7.url) %>
+</pic>
 
-<p>
-  <strong>Image4:</strong>
-  <%= @portfolio.image4 %>
-</p>
+<pic id="image8">
+  <%= image_tag(@portfolio.image8.url) %>
+</pic>
 
-<p>
-  <strong>Image6:</strong>
-  <%= @portfolio.image6 %>
+<pic id="image9">
+  <%= image_tag(@portfolio.image9.url) %>
+</pic>
+</div>
+<div id="fourthgroup">
+    <icon class="up2 fa fa-chevron-left">
+<pic id="image10">
+  <%= image_tag(@portfolio.image10.url) %>
+</pic>
+<pic id="image11">
+  <%= image_tag(@portfolio.image11.url) %>
+</pic>
+<pic id="image12">
+  <%= image_tag(@portfolio.image12.url) %>
+</pic>
+</div>
 </p>
-
-<p>
-  <strong>Image8:</strong>
-  <%= @portfolio.image8 %>
-</p>
-
-<p>
-  <strong>Image9:</strong>
-  <%= @portfolio.image9 %>
-</p>
-
-<p>
-  <strong>Image10:</strong>
-  <%= @portfolio.image10 %>
-</p>
-
-<p>
-  <strong>Image11:</strong>
-  <%= @portfolio.image11 %>
-</p>
-
-<p>
-  <strong>Image12:</strong>
-  <%= @portfolio.image12 %>
-</p>
+</div>
 
 <%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
 <%= link_to 'Back', portfolios_path %>

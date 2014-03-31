@@ -4,10 +4,46 @@
 #portfolio_page {
 	background: url("light_grey.png")repeat center center fixed;
 	margin-top: -12px;
+
 }
 
 #portfolio_images img {
 	border-radius: 6px;
 	box-shadow: 5px 5px 5px #888;
-	
+
+
+}
+#portfolio_show {
+	background: #e0e0e0;
+	border-radius: 6px;
+}
+#portfolio_show img {
+border-radius: 6px;
+}
+
+#portfolio_thumb {
+	margin-top: -5px;
+	max-height: 150px;
+	display:inline-block;
+	background: #e0e0e0;
+	margin-bottom:30px;
+	border-radius: 6px;
+}
+
+#portfolio_thumb img {
+	max-height: 150px;
+	display:inline-block;
+	padding: 10px;
+	border-radius: 6px !important;
+
+}
+
+#secondgroup {
+    display:none;
+}
+#thirdgroup {
+    display:none;
+}
+#fourthgroup {
+    display:none;
 }
