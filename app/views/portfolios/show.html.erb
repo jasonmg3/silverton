@@ -141,24 +141,34 @@ $('#image11').click(function(e){
 
 <script>
 $(document).ready(function() {
-$( "#up" ).click(function() {
-  $( "#firstgroup" ).toggle( "slow") 
-  $("#secondgroup").toggle("slow")
+$( ".up" ).click(function() {
+  $( "#firstgroup" ).toggle( "fast") 
+  $("#secondgroup").toggle("fast")
 
   });
 $( ".down" ).click(function() {
-  $( "#firstgroup" ).toggle( "slow") 
-  $("#secondgroup").toggle("slow")
+  $( "#firstgroup" ).toggle( "fast") 
+  $("#secondgroup").toggle("fast")
 
   });
-$( "#down2" ).click(function() {
-  $( "#secondgroup" ).toggle( "slow") 
-  $("#thirdgroup").toggle("slow")
+$( ".down2" ).click(function() {
+  $( "#secondgroup" ).toggle( "fast") 
+  $("#thirdgroup").toggle("fast")
 
   });
-$( "#up2" ).click(function() {
-  $( "#secondgroup" ).toggle( "slow") 
-  $("#thirdgroup").toggle("slow")
+$( ".up2" ).click(function() {
+  $( "#secondgroup" ).toggle( "fast") 
+  $("#thirdgroup").toggle("fast")
+
+  });
+$( ".down3" ).click(function() {
+  $( "#thirdgroup" ).toggle( "fast") 
+  $("#fourthgroup").toggle("fast")
+
+  });
+$( ".up3" ).click(function() {
+  $( "#fourthgroup" ).toggle( "fast") 
+  $("#thirdgroup").toggle("fast")
 
   });
 });
@@ -191,9 +201,9 @@ $( "#up2" ).click(function() {
 <div id='portfolio_thumb' class="col-md-8 col-md-offset-2 text-center">
 <p>
   <div id="firstgroup">
-    <icon class="up-max-icon fa fa-chevron-left">
+    <icon class="up-max-icon fa fa-chevron-left"></icon>
   <pic id="image">
-    </icon><%= image_tag(@portfolio.image.url) %>
+    <%= image_tag(@portfolio.image.url) %>
   </pic>
 
   <pic id="image2">
@@ -206,7 +216,7 @@ $( "#up2" ).click(function() {
 <icon class="down fa fa-chevron-right"></icon>
 </div>
 <div id="secondgroup">
-    <icon class="up fa fa-chevron-left">
+    <icon class="up fa fa-chevron-left"></icon>
   <pic id="image4">
     <%= image_tag(@portfolio.image4.url) %>
   </pic>
@@ -219,7 +229,7 @@ $( "#up2" ).click(function() {
 <icon class="down2 fa fa-chevron-right"></icon>
 </div>
 <div id="thirdgroup">
-    <icon class="up2 fa fa-chevron-left">
+    <icon class="up2 fa fa-chevron-left"></icon>
 <pic id="image7">
   <%= image_tag(@portfolio.image7.url) %>
 </pic>
@@ -231,9 +241,10 @@ $( "#up2" ).click(function() {
 <pic id="image9">
   <%= image_tag(@portfolio.image9.url) %>
 </pic>
+<icon class="down3 fa fa-chevron-right"></icon>
 </div>
 <div id="fourthgroup">
-    <icon class="up2 fa fa-chevron-left">
+    <icon class="up3 fa fa-chevron-left"></icon>
 <pic id="image10">
   <%= image_tag(@portfolio.image10.url) %>
 </pic>
