@@ -7,19 +7,13 @@ $(document).ready(function() {
   $('#image').click(function(e){
     e.preventDefault();
     $('#portfolio_main').html($('#image').html());
-    $('#portfolio_main').show('slide', {
-      direction: "left"
-
-    }, 2000);
+    $('#portfolio_main').show("fast");
 });
 
 $('#image2').click(function(e){
   e.preventDefault();
     $('#portfolio_main').html($('#image2').html());
-    $('#portfolio_main').show('slide', {
-      direction: "left"
-
-    }, 2000);
+    $('#portfolio_main').show("fast");
 
 
 });
@@ -27,20 +21,14 @@ $('#image2').click(function(e){
 $('#image3').click(function(e){
   e.preventDefault();
     $('#portfolio_main').html($('#image3').html());
-    $('#portfolio_main').show('slide', {
-      direction: "left"
-
-    }, 2000);
+    $('#portfolio_main').show("fast");
 
 
 });
 $('#image4').click(function(e){
   e.preventDefault();
     $('#portfolio_main').html($('#image4').html());
-    $('#portfolio_main').show('slide', {
-      direction: "left"
-
-    }, 2000);
+    $('#portfolio_main').show("fast");
 
 
 });
@@ -48,90 +36,63 @@ $('#image4').click(function(e){
 $('#image5').click(function(e){
   e.preventDefault();
     $('#portfolio_main').html($('#image5').html());
-    $('#portfolio_main').show('slide', {
-      direction: "left"
-
-    }, 2000);
+    $('#portfolio_main').show("fast");
 
 
 });
 $('#image6').click(function(e){
   e.preventDefault();
     $('#portfolio_main').html($('#image6').html());
-    $('#portfolio_main').show('slide', {
-      direction: "left"
-
-    }, 2000);
+    $('#portfolio_main').show("fast");
 
 
 });
 $('#image7').click(function(e){
   e.preventDefault();
     $('#portfolio_main').html($('#image7').html());
-    $('#portfolio_main').show('slide', {
-      direction: "left"
-
-    }, 2000);
+    $('#portfolio_main').show("fast");
 
 
 });
 $('#image8').click(function(e){
   e.preventDefault();
     $('#portfolio_main').html($('#image8').html());
-    $('#portfolio_main').show('slide', {
-      direction: "left"
-
-    }, 2000);
+    $('#portfolio_main').show("fast");
 
 
 });
 $('#image9').click(function(e){
   e.preventDefault();
     $('#portfolio_main').html($('#image9').html());
-    $('#portfolio_main').show('slide', {
-      direction: "left"
-
-    }, 2000);
+    $('#portfolio_main').show("fast");
 
 
 });
 $('#image10').click(function(e){
   e.preventDefault();
     $('#portfolio_main').html($('#image10').html());
-    $('#portfolio_main').show('slide', {
-      direction: "left"
-
-    }, 2000);
+    $('#portfolio_main').show("fast");
 
 
 });
 $('#image11').click(function(e){
   e.preventDefault();
     $('#portfolio_main').html($('#image11').html());
-    $('#portfolio_main').show('slide', {
-      direction: "left"
-
-    }, 2000);
+    $('#portfolio_main').show("fast");
 
 
 });
 $('#image12').click(function(e){
   e.preventDefault();
     $('#portfolio_main').html($('#image12').html());
-    $('#portfolio_main').show('slide', {
-      direction: "left"
-
-    }, 2000);
+    $('#portfolio_main').show("fast");
 
 
 });
 $('#image11').click(function(e){
   e.preventDefault();
     $('#portfolio_main').html($('#image11').html());
-    $('#portfolio_main').show('slide', {
-      direction: "left"
-
-    }, 2000);
+    $('#portfolio_main').show("fast");
 
 
 });
@@ -144,21 +105,39 @@ $(document).ready(function() {
 $( ".up" ).click(function() {
   $( "#firstgroup" ).toggle( "fast") 
   $("#secondgroup").toggle("fast")
+   $("#secondgroup_icon").toggle("fast")
+  $("#firstgroup_icon").toggle("fast")
+  $("#down1_icon").toggle("fast")
+  $("#down2_icon").toggle("fast")
+
 
   });
 $( ".down" ).click(function() {
   $( "#firstgroup" ).toggle( "fast") 
   $("#secondgroup").toggle("fast")
+  $("#down1_icon").toggle("fast")
+  $("#down2_icon").toggle("fast")
+  $("#firstgroup_icon").toggle("fast")
+  $("#secondgroup_icon").toggle("fast")
+  
 
   });
 $( ".down2" ).click(function() {
   $( "#secondgroup" ).toggle( "fast") 
   $("#thirdgroup").toggle("fast")
+  $("#down3_icon").toggle("fast")
+  $("#down2_icon").toggle("fast")
+  $( "#secondgroup_icon" ).toggle( "fast") 
+  $("#thirdgroup_icon").toggle("fast")
 
   });
 $( ".up2" ).click(function() {
   $( "#secondgroup" ).toggle( "fast") 
   $("#thirdgroup").toggle("fast")
+  $( "#secondgroup_icon" ).toggle( "fast") 
+  $("#thirdgroup_icon").toggle("fast")
+  $("#down3_icon").toggle("fast")
+  $("#down2_icon").toggle("fast")
 
   });
 $( ".down3" ).click(function() {
@@ -178,30 +157,38 @@ $( ".up3" ).click(function() {
 <p id="notice"><%= notice %></p>
  <div class="container">
         <div class="row">
-          <div id="portfolio_show" class="col-md-8 col-md-offset-2 text-center">
-<p>
-  <center>
-  <strong>
-  <%= @portfolio.title %>
-</strong> 
-</center>
-</p>
+          <div id="portfolio_show" class="col-md-8 col-md-offset-1 text-center">
 
-<p>
-  <strong>Description:</strong>
-  <%= @portfolio.description %>
-</p>
 <div id="portfolio_main">
     <p>
 
       <%= image_tag(@portfolio.image.url) %>
     </p>
 </div>
+<div id="portfolio_text">
+
+  <center>
+
+  <h2><%= @portfolio.title %></h2>
+
+</center>
+
+
+<h3>
+  <%= @portfolio.description %>
+</h3>
 </div>
-<div id='portfolio_thumb' class="col-md-8 col-md-offset-2 text-center">
-<p>
+</div>
+<div id='portfolio_thumb' class="col-md-2 text-center">
+
+<p> 
+  <div id="slide_icons_up">
+    <icon id="firstgroup_icon" class="up-max-icon fa fa-chevron-up"></icon>
+    <icon id="secondgroup_icon" class="up fa fa-chevron-up"></icon>
+    <icon id="thirdgroup_icon" class="up2 fa fa-chevron-up"></icon>
+  </div>
   <div id="firstgroup">
-    <icon class="up-max-icon fa fa-chevron-left"></icon>
+    
   <pic id="image">
     <%= image_tag(@portfolio.image.url) %>
   </pic>
@@ -213,23 +200,19 @@ $( ".up3" ).click(function() {
   <pic id="image3">
     <%= image_tag(@portfolio.image3.url) %> 
   </pic>
-<icon class="down fa fa-chevron-right"></icon>
-</div>
-<div id="secondgroup">
-    <icon class="up fa fa-chevron-left"></icon>
+
   <pic id="image4">
     <%= image_tag(@portfolio.image4.url) %>
   </pic>
+  </div>
+  <div id="secondgroup">
   <pic id="image5">
   <%= image_tag(@portfolio.image5.url) %>
 </pic>
   <pic id="image6">
   <%= image_tag(@portfolio.image6.url) %>
 </pic>
-<icon class="down2 fa fa-chevron-right"></icon>
-</div>
-<div id="thirdgroup">
-    <icon class="up2 fa fa-chevron-left"></icon>
+
 <pic id="image7">
   <%= image_tag(@portfolio.image7.url) %>
 </pic>
@@ -237,14 +220,11 @@ $( ".up3" ).click(function() {
 <pic id="image8">
   <%= image_tag(@portfolio.image8.url) %>
 </pic>
-
+</div>
+<div id="thirdgroup">
 <pic id="image9">
   <%= image_tag(@portfolio.image9.url) %>
 </pic>
-<icon class="down3 fa fa-chevron-right"></icon>
-</div>
-<div id="fourthgroup">
-    <icon class="up3 fa fa-chevron-left"></icon>
 <pic id="image10">
   <%= image_tag(@portfolio.image10.url) %>
 </pic>
@@ -255,11 +235,18 @@ $( ".up3" ).click(function() {
   <%= image_tag(@portfolio.image12.url) %>
 </pic>
 </div>
+  <div id="slide_icons_down">
+    <icon id="down1_icon" class="down fa fa-chevron-down"></icon>
+    <icon id="down2_icon" class="down2 fa fa-chevron-down"></icon>
+    <icon id="down3_icon" class="down_max fa fa-chevron-down"></icon>
+  </div>
+
 </p>
 </div>
-
+<div class="col-md-12">
 <%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
-<%= link_to 'Back', portfolios_path %>
+<%= link_to 'Back', portfolios_path %><br /><br />
+</div>
 
       </div>
 </div>

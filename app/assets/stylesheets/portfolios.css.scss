@@ -14,16 +14,17 @@
 
 }
 #portfolio_show {
-	background: #e0e0e0;
+
 	border-radius: 6px;
 }
 #portfolio_show img {
+box-shadow: 5px 5px 5px #888;
 border-radius: 6px;
 }
 
 #portfolio_thumb {
-	margin-top: -5px;
-	max-height: 150px;
+	margin-left: 15px;
+
 	display:inline-block;
 	background: #e0e0e0;
 	margin-bottom:30px;
@@ -31,10 +32,12 @@ border-radius: 6px;
 }
 
 #portfolio_thumb img {
-	max-height: 150px;
+
 	display:inline-block;
-	padding: 10px;
-	padding-bottom: 20px;
+	margin: 10px;
+	margin-left:-1px;
+	margin-bottom: 20px;
+	box-shadow: 5px 5px 5px #888;
 	border-radius: 6px !important;
 
 }
@@ -48,7 +51,36 @@ border-radius: 6px;
 #fourthgroup {
     display:none;
 }
+#secondgroup_icon {
+    display:none;
+}
+#thirdgroup_icon {
+    display:none;
+}
+#down2_icon {
+    display:none;
+}
+#down3_icon {
+    display:none;
+}
+
 
 .uptest {
 	display: inline-block;
 }
+#portfolio_text {
+	font-size:120%;
+	margin-bottom:30px;
+	margin-top:15px;
+}
+#slide_icons_up {
+padding-top: 10px;
+font-size:135%;
+	
+} 
+#slide_icons_down {
+padding-bottom: 10px;
+font-size:135%;
+	
+} 
+
