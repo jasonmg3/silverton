@@ -157,19 +157,20 @@ $( ".up3" ).click(function() {
 <p id="notice"><%= notice %></p>
  <div class="container">
         <div class="row">
-          <div id="portfolio_show" class="col-md-8 col-md-offset-1 text-center">
+          <div id="portfolio_show" class="col-md-9">
 
 <div id="portfolio_main">
     <p>
-
+      <center>
       <%= image_tag(@portfolio.image.url) %>
+    </center>
     </p>
 </div>
 <div id="portfolio_text">
 
   <center>
 
-  <h2><%= @portfolio.title %></h2>
+  <h2><%= @portfolio.title %><br /></h2>
 
 </center>
 
