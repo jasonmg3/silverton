@@ -68,7 +68,7 @@
 <div class="col-md-3">
   <div class="field">
     <%= f.label :image6, "Image 6" %><br>
-<% if f.object.new_record? | @portfolio.image2.blank? %>
+<% if f.object.new_record? | @portfolio.image6.blank? %>
 <%= f.file_field :image6 %>
 <% else %>
 <%= f.file_field :image6 %>
@@ -77,16 +77,16 @@
   </div>
   <div class="field">
     <%= f.label :image7, "Image 7" %><br>
-<% if f.object.new_record? | @portfolio.image7.blank? %>
+<% if f.object.new_record? | @portfolio.image5.blank? %>
 <%= f.file_field :image7 %>
 <% else %>
 <%= f.file_field :image7 %>
-      <%= link_to File.basename(f.object.image7.url), f.object.image7.url %>
+      <%= link_to File.basename(f.object.image15.url), f.object.image15.url %>
         <% end %>
   </div>
   <div class="field">
     <%= f.label :image8, "Image 8" %><br>
-<% if f.object.new_record? | @portfolio.image2.blank? %>
+<% if f.object.new_record? | @portfolio.image8.blank? %>
 <%= f.file_field :image8 %>
 <% else %>
 <%= f.file_field :image8 %>
@@ -127,6 +127,24 @@
 <% else %>
 <%= f.file_field :image12 %>
       <%= link_to File.basename(f.object.image12.url), f.object.image12.url %>
+        <% end %>
+  </div>
+    <div class="field">
+    <%= f.label :imagep, "Imagep 14" %><br>
+<% if f.object.new_record? | @portfolio.imagep.blank? %>
+<%= f.file_field :imagep %>
+<% else %>
+<%= f.file_field :imagep %>
+      <%= link_to File.basename(f.object.imagep.url), f.object.imagep.url %>
+        <% end %>
+  </div>
+    <div class="field">
+    <%= f.label :image15, "Image 15" %><br>
+<% if f.object.new_record? | @portfolio.image5.blank? %>
+<%= f.file_field :image15 %>
+<% else %>
+<%= f.file_field :image15 %>
+      <%= link_to File.basename(f.object.image15.url), f.object.image15.url %>
         <% end %>
   </div>
   <div class="actions">

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140330212130) do
+ActiveRecord::Schema.define(version: 20140403183623) do
 
   create_table "portfolios", force: true do |t|
     t.string   "title"
@@ -30,6 +30,16 @@ ActiveRecord::Schema.define(version: 20140330212130) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image7"
+    t.string   "image14"
+    t.string   "image15"
+    t.string   "imagep_file_name"
+    t.string   "imagep_content_type"
+    t.integer  "imagep_file_size"
+    t.datetime "imagep_updated_at"
+    t.string   "imagep2_file_name"
+    t.string   "imagep2_content_type"
+    t.integer  "imagep2_file_size"
+    t.datetime "imagep2_updated_at"
   end
 
 end
