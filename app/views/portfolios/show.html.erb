@@ -1,3 +1,27 @@
+<style type="text/css">
+    ul#demo-block{ margin:0 15px 15px 15px; }
+      ul#demo-block li{ margin:0 0 10px 0; padding:10px; display:inline; float:left; clear:both; color:#aaa; background:url('img/bg-black.png'); font:11px Helvetica, Arial, sans-serif; }
+      ul#demo-block li a{ color:#eee; font-weight:bold; }
+      #footer_area {
+  background: #fff !important;
+  height: 0px !important;
+  color: #efefef;
+  font-size: 1% !important;
+}
+#footer_text {
+  line-height: 0px !important;
+  font-size: 0% !important;
+
+
+}
+#footer_area img {
+  width:0px !important;
+}
+#footer_area p {
+  font-size: 0% !important;
+}
+  </style>
+
 <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
 <script>
 
@@ -155,9 +179,8 @@ $( ".up3" ).click(function() {
 
 
 <p id="notice"><%= notice %></p>
- <div class="container">
-        <div class="row">
-          <div id="portfolio_show" class="col-md-9">
+
+          <div id="portfolio_show"><!-- class="col-md-9">-->
 
 <div id="portfolio_main">
     <p>
@@ -240,13 +263,10 @@ $( ".up3" ).click(function() {
     <icon id="down2_icon" class="down2 fa fa-chevron-down"></icon>
     <icon id="down3_icon" class="down_max fa fa-chevron-down"></icon>
   </div>
+  <%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
+<%= link_to 'Back', portfolios_path %>
 
 </p>
 </div>
-<div class="col-md-12">
-<%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
-<%= link_to 'Back', portfolios_path %><br /><br />
-</div>
 
-      </div>
-</div>
+
