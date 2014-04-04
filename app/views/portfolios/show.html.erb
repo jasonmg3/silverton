@@ -183,25 +183,27 @@ $( ".up3" ).click(function() {
           <div id="portfolio_show"><!-- class="col-md-9">-->
 
 <div id="portfolio_main">
-    <p>
+    
       <center>
       <%= image_tag(@portfolio.image.url) %>
     </center>
-    </p>
+    
 </div>
+<!--
 <div id="portfolio_text">
 
   <center>
 
-  <h2><%= @portfolio.title %><br /></h2>
+  <h2><%#<%= @portfolio.title %><br /></h2>
 
 </center>
 
 
 <p>
-  <%= @portfolio.description.to_s.html_safe %>
+  <%#<%= @portfolio.description.to_s.html_safe %>
 </p>
 </div>
+-->
 </div>
 <div id='portfolio_thumb' class="col-md-2 text-center">
 
