@@ -14,7 +14,7 @@ class PagesController < ApplicationController
   def architects
   end
 
-  def process
+  def build_process
   end
 
   def build
@@ -28,6 +28,6 @@ class PagesController < ApplicationController
 
   def third_party
   end
-  
+
 
 end
