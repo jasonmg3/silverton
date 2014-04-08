@@ -10,4 +10,24 @@ class PagesController < ApplicationController
 
   def main_portfolio
   end
+
+  def architects
+  end
+
+  def process
+  end
+
+  def build
+  end
+
+  def design
+  end
+
+  def home_site
+  end
+
+  def third_party
+  end
+  
+
 end

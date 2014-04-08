@@ -14,8 +14,12 @@ Silverton::Application.routes.draw do
   get '/contact' => 'pages#contact'
 
   get '/about' => 'pages#about'
-
-
+  get '/architects' => 'pages#architects'
+  get '/process' => 'pages#process'
+  get '/build' => 'pages#build'
+  get '/design' => 'pages#design'
+  get '/third_party' => 'pages#third_party'
+  get '/home_site' => 'pages#home_site'
 
   root :to => 'pages#home'
 
