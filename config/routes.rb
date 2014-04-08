@@ -15,7 +15,7 @@ Silverton::Application.routes.draw do
 
   get '/about' => 'pages#about'
   get '/architects' => 'pages#architects'
-  get '/process' => 'pages#process'
+  get '/build_process' => 'pages#process'
   get '/build' => 'pages#build'
   get '/design' => 'pages#design'
   get '/third_party' => 'pages#third_party'
