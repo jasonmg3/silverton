@@ -41,7 +41,7 @@ body {
 #featured_no_tierra img {
 	box-shadow: 5px 5px 5px 0px #888;
 	border-radius: 50%;
-	
+
 }
 #featured_no_tierra {
 border-left: solid 3px #888 !important;
@@ -126,6 +126,7 @@ i.service-icon {
 #southern_living {
 	display: block;
 	margin-bottom: 48px;
+	margin-top:-20px;
 	padding:30px;
 
 }
@@ -173,6 +174,7 @@ line-height: 24px;
 #phone {
 	font-size: 135% !important;
 	font-weight: bold;
+	margin-top:-40px;
 }
 /*
 #tierra {
@@ -187,6 +189,11 @@ line-height: 24px;
 	font-size: 120% !important;
 	line-height: 24px;
 	margin-bottom: 20px;
+}
+
+#plat img {
+	margin-bottom: 35px;
+	box-shadow: 5px 5px 5px 0px #888;
 }
 
 
