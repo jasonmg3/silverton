@@ -31,10 +31,16 @@ class PagesController < ApplicationController
 
   def register
   end
+  
   def tierra
   end
+  
   def awards
   end
+
+  def thanks
+  end
+
 
 
 end

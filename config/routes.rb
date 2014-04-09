@@ -23,6 +23,7 @@ Silverton::Application.routes.draw do
   get '/register' => 'pages#register'
   get '/awards' => 'pages#awards'
   get '/tierra' => 'pages#tierra'
+  get '/thanks' => 'pages#thanks'
 
   root :to => 'pages#home'
 
