@@ -29,5 +29,12 @@ class PagesController < ApplicationController
   def third_party
   end
 
+  def register
+  end
+  def tierra
+  end
+  def awards
+  end
+
 
 end

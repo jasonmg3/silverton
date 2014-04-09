@@ -20,6 +20,9 @@ Silverton::Application.routes.draw do
   get '/design' => 'pages#design'
   get '/third_party' => 'pages#third_party'
   get '/home_site' => 'pages#home_site'
+  get '/register' => 'pages#register'
+  get '/awards' => 'pages#awards'
+  get '/tierra' => 'pages#tierra'
 
   root :to => 'pages#home'
 
