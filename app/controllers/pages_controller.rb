@@ -41,6 +41,11 @@ class PagesController < ApplicationController
   def thanks
   end
 
+  def parade_home
+  end
+
+  def texas_star
+  end
 
 
 end
