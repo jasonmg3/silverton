@@ -30,6 +30,7 @@ body {
 #assoc img{
 	margin-left: 10px;
 	margin-right: 10px;
+	vertical-align: middle;
 }
 
 #featured img {
@@ -40,7 +41,7 @@ body {
 }
 #featured_no_tierra img {
 	box-shadow: 5px 5px 5px 0px #888;
-	border-radius: 50%;
+	border-radius: 100%;
 
 }
 #featured_no_tierra {
@@ -128,6 +129,7 @@ i.service-icon {
 	margin-bottom: 48px;
 	margin-top:-20px;
 	padding:30px;
+	vertical-align:middle;
 
 }
 #featured_sec {
@@ -172,9 +174,14 @@ font-size: 110%;
 line-height: 24px;
 }
 #phone {
+
+	font-weight: bold;
+
+}
+#phone p {
 	font-size: 135% !important;
 	font-weight: bold;
-	margin-top:-40px;
+
 }
 /*
 #tierra {
@@ -195,5 +202,49 @@ line-height: 24px;
 	margin-bottom: 35px;
 	box-shadow: 5px 5px 5px 0px #888;
 }
+#port-text_front {
+	background: url("overlay.png");
+	position: relative;
+	color: #fff;
+	padding: 15px;
 
+	margin-top:15px;
+}
+#port-text_front p {
+font-size: 110%;
+line-height: 24px;
+}
+.overlay {
+
+position: absolute;
+top: 10px !important;
+left: -60px !important;
+width: 100%;
+height: 100%;
+z-index: 10;
+pointer-events: none;
+  }
+     @media (min-width: 768px) and (max-width: 979px) {
+      .overlay{
+
+         width:50%;
+        height:50%;
+  }    
+ }
+
+  @media (max-width: 767px) {
+     .overlay{
+
+  width:50%;
+  height:50%;
+  }
+
+  }
+@media (max-width: 480px) {
+   .overlay{
+   width:50%;
+  height:50%;
+
+  }
+}
 
