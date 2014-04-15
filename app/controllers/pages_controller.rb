@@ -47,5 +47,10 @@ class PagesController < ApplicationController
   def texas_star
   end
 
+  def parade_info
+  end
+
+  def remodeling 
+  end
 
 end

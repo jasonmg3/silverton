@@ -26,6 +26,8 @@ Silverton::Application.routes.draw do
   get '/thanks' => 'pages#thanks'
   get '/texas_star' => 'pages#texas_star'
   get '/parade_home' => 'pages#parade_home'
+  get '/remodeling' => 'pages#remodeling'
+  get '/parade_info' => 'pages#parade_info'
 
   root :to => 'pages#home'
 
